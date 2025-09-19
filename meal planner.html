@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PantryPal – Weekly Meal Planner</title>
+
+  <style>
+    /* Reset browser defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    /* Planner grid container */
+    .planner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Each day card */
+    .day-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .day-card:hover {
+      transform: scale(1.02);
+    }
+
+    .day-card h2 {
+      color: #ff7043;
+      margin-bottom: 0.5rem;
+    }
+
+    .meal {
+      margin-bottom: 0.7rem;
+    }
+
+    .meal strong {
+      display: inline-block;
+      width: 90px;
+      color: #444;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>PantryPal – Weekly Meal Planner</h1>
+    <p>Plan your meals for the entire week</p>
+  </header>
+
+  <!-- Weekly Planner Grid -->
+  <section class="planner">
+    <!-- Monday -->
+    <div class="day-card">
+      <h2>Monday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Oatmeal with fruits</div>
+      <div class="meal"><strong>Lunch:</strong> Grilled chicken salad</div>
+      <div class="meal"><strong>Dinner:</strong> Pasta with tomato sauce</div>
+    </div>
+
+    <!-- Tuesday -->
+    <div class="day-card">
+      <h2>Tuesday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Scrambled eggs & toast</div>
+      <div class="meal"><strong>Lunch:</strong> Veggie wrap</div>
+      <div class="meal"><strong>Dinner:</strong> Stir-fried rice with veggies</div>
+    </div>
+
+    <!-- Wednesday -->
+    <div class="day-card">
+      <h2>Wednesday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Smoothie bowl</div>
+      <div class="meal"><strong>Lunch:</strong> Tuna sandwich</div>
+      <div class="meal"><strong>Dinner:</strong> Baked salmon with quinoa</div>
+    </div>
+
+    <!-- Thursday -->
+    <div class="day-card">
+      <h2>Thursday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Yogurt with granola</div>
+      <div class="meal"><strong>Lunch:</strong> Caesar salad</div>
+      <div class="meal"><strong>Dinner:</strong> Tacos with beans</div>
+    </div>
+
+    <!-- Friday -->
+    <div class="day-card">
+      <h2>Friday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Pancakes with syrup</div>
+      <div class="meal"><strong>Lunch:</strong> Chicken wrap</div>
+      <div class="meal"><strong>Dinner:</strong> Pizza (homemade)</div>
+    </div>
+
+    <!-- Saturday -->
+    <div class="day-card">
+      <h2>Saturday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Avocado toast</div>
+      <div class="meal"><strong>Lunch:</strong> Spaghetti carbonara</div>
+      <div class="meal"><strong>Dinner:</strong> Veggie soup</div>
+    </div>
+
+    <!-- Sunday -->
+    <div class="day-card">
+      <h2>Sunday</h2>
+      <div class="meal"><strong>Breakfast:</strong> Waffles with honey</div>
+      <div class="meal"><strong>Lunch:</strong> Grilled cheese sandwich</div>
+      <div class="meal"><strong>Dinner:</strong> Roast chicken with veggies</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>PantryPal © 2025 | Built with HTML & CSS</p>
+  </footer>
+</body>
+</html>
